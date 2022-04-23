@@ -25,24 +25,24 @@ Its got 3 components:
 ![kebernetes architecture](assets/etcd.png "arch")
 
 The <b>etcd</b> is a simple distributed key value stored. <br />
-Kubernetes uses etcd as its database and stores all cluster date here. Som of the information that might be stored, is <br />:
-	- Job scheduling
-	- Pod details
-	- Stage infromation, etc..
+Kubernetes uses etcd as its database and stores all cluster date here. Som of the information that might be stored, is:
+* Job scheduling
+* Pod details
+* Stage infromation, etc..
 	
 <h2>kubectl</h2>
 
 ![kebernetes architecture](assets/kubectl-config.png "arch")
 
 You interact with the master node using <b>kubectl</b> application which is the command line interface for kubernetes. <br />
-Kubectl has a config file called <b>kubeconfig</>. This file has a server infromation, as well as authentication infromation to access the API server.
+Kubectl has a config file called <b>kubeconfig</b>. This file has a server infromation, as well as authentication infromation to access the API server.
 
 <h2>Worker Node</h2>
 
 ![kebernetes architecture](assets/worknode.png "arch")
 
 <b>worker nodes</b> are the nodes where your application operate. <br />
-The <b>worker nodes</> communicate back with the Master node.
+The <b>worker nodes</b> communicate back with the Master node.
 
 <h2>Worker Node Inside</h2>
 
@@ -71,6 +71,6 @@ Once Pods have been deployed, and are running, the Kubelet process communicates 
 
 ![kebernetes architecture](assets/worknode-outside.png "arch")
 
-Worker Nodes can be exposed to the internet via load balancer. And, traffic coming into the Nodes is also handled by the Kube-proxy, which is how an End-user ends up talking to a Kubernetes application. <br />
+Worker Nodes can be exposed to the <b>internet</b> via load balancer. And, traffic coming into the Nodes is also handled by the Kube-proxy, which is how an <b>End-user</b> ends up talking to a Kubernetes application. <br />
 
 
